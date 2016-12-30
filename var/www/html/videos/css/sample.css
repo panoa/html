@@ -1,0 +1,29 @@
+header{
+}
+body{
+
+}
+footer{
+}
+a {
+  text-decoration:none;
+}
+
+videos {
+  margin:0
+  padding:0
+  width:800px
+  height:800px
+}
+
+#movieList {
+  border-collapse:collapse;
+}
+
+#movieList th {
+  padding:2px;
+}
+
+#movieList td {
+  padding:10px;
+}
