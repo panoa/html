@@ -1,5 +1,5 @@
 <?php
-  require_once('models/listModel.php');
+  require_once(dirname(__FILE__) . '/models/listModel.php');
 ?>
 <!DOCTYPE html>
 <html lang="ja">
