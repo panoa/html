@@ -6,7 +6,7 @@ body{
 /* モーダルダイアログ設定 */
 #modal-content{
   position:fixed;
-  width:280px;
+  width:300px;
   margin:1.5em auto 0;
   padding:20px;
   border:2px solid #aaa;
@@ -25,7 +25,11 @@ body{
   color:#f00;
 }
 
-#modal-overlay{
+#modal-close {
+  font-size:36px
+}
+
+#modal-overlay {
   z-index:1;
   display:none;
   position:fixed;
