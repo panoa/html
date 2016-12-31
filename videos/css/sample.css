@@ -1,7 +1,8 @@
 header{
 }
 body{
-
+  padding:0;
+  margin:0;
 }
 footer{
 }
@@ -9,21 +10,34 @@ a {
   text-decoration:none;
 }
 
-videos {
-  margin:0
-  padding:0
-  width:800px
-  height:800px
-}
-
 #movieList {
+  width:100%;
+  border:0px #808080 solid;
   border-collapse:collapse;
 }
 
 #movieList th {
-  padding:2px;
+  border-bottom:1px #808080 solid;
+  padding:0;
 }
 
 #movieList td {
-  padding:10px;
+  border-bottom:1px #808080 solid;
+  padding:0;
+  margin:0;
+}
+
+#movieList .thumb {
+  width:320px;
+  height:240px;
+  padding:5px 5px 5px 5px;
+}
+
+#movieList .thumb img {
+  vertical-align:middle;
+}
+
+#movieList .link {
+  font-size:26px;
+  padding-left:10px;
 }

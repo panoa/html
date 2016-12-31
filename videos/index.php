@@ -1,4 +1,6 @@
 <?php
+  $debug = false;
+
   require_once(dirname(__FILE__) . '/models/listModel.php');
 ?>
 <!DOCTYPE html>
@@ -23,11 +25,11 @@
         <?php
   foreach($movies as $movieTitle) {
       echo "<tr>";
-        echo "<td>";
-          echo "サムネイル";
+        echo "<td class=\"thumb\">";
+          echo "<a href=\"$TARGET_DIR/$movieTitle.mp4\"><img src=\"$TARGET_DIR/thumbs/$movieTitle.jpg\" /></a>";
         echo "</td>";
         echo "<td class=\"link\">";
-          echo "<a href=¥"$TARGET_DIR/$movieTitle¥">$movieTitle</a>";
+          echo "<a href=\"$TARGET_DIR/$movieTitle.mp4\">$movieTitle</a>";
         echo "</td>";
       echo "</tr>";
   }

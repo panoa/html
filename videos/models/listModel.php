@@ -19,11 +19,28 @@
       continue;
     }
 
-    $movies[] = $file;
+    $movies[] = mb_basename($file, ".mp4");
+ 
   }
+   
+  // ソート処理
+  sort($movies);
 
   //debug文の出力
   if($debug) {
     var_dump($movies);
+  }
+
+  /**
+   * マルチバイト対応のbasename関数
+   */
+  function mb_basename($str, $suffix=null){
+    $tmp = preg_split('/[\/\\\\]/', $str);
+    $res = end($tmp);
+    if(strlen($suffix)){
+        $suffix = preg_quote($suffix);
+        $res = preg_replace("/({$suffix})$/u", "", $res);
+    }
+    return $res;
   }
 ?>
