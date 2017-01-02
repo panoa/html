@@ -1,7 +1,7 @@
 <?php
   $debug = false;
 
-  require_once(dirname(__FILE__) . '/models/listModel.php');
+  require_once(dirname(__FILE__) . '/model/listModel.php');
 ?>
 <!DOCTYPE html>
 <html lang="ja">
